@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+local/
+tmp/
+output/
+*.log
+.venv/
+__pycache__/
