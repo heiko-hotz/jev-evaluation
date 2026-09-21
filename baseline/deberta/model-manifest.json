@@ -1,0 +1,41 @@
+{
+  "repo_id": "MoritzLaurer/deberta-v3-large-zeroshot-v2.0",
+  "revision": "cf44676c28ba7312e5c5f8f8d2c22b3e0c9cdae2",
+  "files": [
+    {
+      "name": "added_tokens.json",
+      "size": 23,
+      "sha256": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f"
+    },
+    {
+      "name": "config.json",
+      "size": 1019,
+      "sha256": "3b0a2a3fb311037ba72670d87cbd16f920581985178547a76936dfdb292e5271"
+    },
+    {
+      "name": "model.safetensors",
+      "size": 870176356,
+      "sha256": "2031ec34340911b2cecf4f95f5e24db91b2a5d7ea0fa1e704e9cd6d61585e477"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": 970,
+      "sha256": "b2f1b2f15f29a6b6d9d6ea4eca1675d2c231a71477f151d48f79cc83a625ba21"
+    },
+    {
+      "name": "spm.model",
+      "size": 2464616,
+      "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 8656646,
+      "sha256": "05402ffae6dd382a8491b1d29bfc139bec5d332662e86a026f433ce54c25c202"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 1256,
+      "sha256": "f5a1a74a632c0e9225e09a21ddf60c2e70ef5d3bfc1f261a24fd8ddab27254d2"
+    }
+  ]
+}

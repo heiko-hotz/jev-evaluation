@@ -1,0 +1,38 @@
+{
+  "repository": "https://github.com/sonos/nlu-benchmark",
+  "commit": "b86ac7f1577868c42158d0dec77db50956046696",
+  "license": "CC0-1.0",
+  "authors": "Coucke et al. (2018)",
+  "seed": 20260921,
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/sonos/nlu-benchmark/b86ac7f1577868c42158d0dec77db50956046696/2017-06-custom-intent-engines/AddToPlaylist/validate_AddToPlaylist.json",
+      "sha256": "14cc9ee49ae477b1452632a6e835498cf4c32da397b16967c82abb3e50403e83"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sonos/nlu-benchmark/b86ac7f1577868c42158d0dec77db50956046696/2017-06-custom-intent-engines/BookRestaurant/validate_BookRestaurant.json",
+      "sha256": "4f7258ccc768b777b2eb8916532db9aa50dbd058ddf1ffb0dc59218963e7442a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sonos/nlu-benchmark/b86ac7f1577868c42158d0dec77db50956046696/2017-06-custom-intent-engines/GetWeather/validate_GetWeather.json",
+      "sha256": "60c095e193655d6ca92be220fed3926ca25e18cd70c85664145efe25d80993af"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sonos/nlu-benchmark/b86ac7f1577868c42158d0dec77db50956046696/2017-06-custom-intent-engines/PlayMusic/validate_PlayMusic.json",
+      "sha256": "922212775e26259d5bffeaf79b6048d070ca017d229df00b2cc9800f71c75d20"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sonos/nlu-benchmark/b86ac7f1577868c42158d0dec77db50956046696/2017-06-custom-intent-engines/RateBook/validate_RateBook.json",
+      "sha256": "c1f8b4114da0bb5e8afd78a8062766e18b2eabb0e717539598db01b09d04619b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sonos/nlu-benchmark/b86ac7f1577868c42158d0dec77db50956046696/2017-06-custom-intent-engines/SearchCreativeWork/validate_SearchCreativeWork.json",
+      "sha256": "8a5e830eddb185d3e4a9d27ded140a145d04766bdce0e58834676ede32d13e77"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sonos/nlu-benchmark/b86ac7f1577868c42158d0dec77db50956046696/2017-06-custom-intent-engines/SearchScreeningEvent/validate_SearchScreeningEvent.json",
+      "sha256": "81e1445713e03c7c3e615353c5f3fee05f369fe9834100b9b9735900a96b9498"
+    }
+  ],
+  "transformation": "Concatenate data[].text exactly, retaining case, punctuation and whitespace; ignore slot annotations."
+}

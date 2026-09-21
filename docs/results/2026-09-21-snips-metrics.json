@@ -1,0 +1,2617 @@
+{
+  "dataset_n": 700,
+  "unique_texts": 697,
+  "models": {
+    "jev": {
+      "complete": true,
+      "attempted": 700,
+      "valid": 700,
+      "invalid_outputs": 0,
+      "transport_or_contract_errors": 0,
+      "valid_output_rate": 1.0,
+      "metrics": {
+        "n": 700,
+        "correct": 680,
+        "accuracy": 0.9714285714285714,
+        "macro_f1": 0.9716104993624449,
+        "per_class": {
+          "AddToPlaylist": {
+            "n": 100,
+            "correct": 100,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BookRestaurant": {
+            "n": 100,
+            "correct": 99,
+            "precision": 1.0,
+            "recall": 0.99,
+            "f1": 0.9949748743718593
+          },
+          "GetWeather": {
+            "n": 100,
+            "correct": 99,
+            "precision": 1.0,
+            "recall": 0.99,
+            "f1": 0.9949748743718593
+          },
+          "PlayMusic": {
+            "n": 100,
+            "correct": 99,
+            "precision": 0.9428571428571428,
+            "recall": 0.99,
+            "f1": 0.9658536585365853
+          },
+          "RateBook": {
+            "n": 100,
+            "correct": 97,
+            "precision": 1.0,
+            "recall": 0.97,
+            "f1": 0.9847715736040609
+          },
+          "SearchCreativeWork": {
+            "n": 100,
+            "correct": 98,
+            "precision": 0.875,
+            "recall": 0.98,
+            "f1": 0.9245283018867925
+          },
+          "SearchScreeningEvent": {
+            "n": 100,
+            "correct": 88,
+            "precision": 1.0,
+            "recall": 0.88,
+            "f1": 0.9361702127659575
+          }
+        },
+        "confusion": {
+          "AddToPlaylist": {
+            "AddToPlaylist": 100,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "BookRestaurant": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 99,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 1,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "GetWeather": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 99,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 1,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "PlayMusic": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 99,
+            "RateBook": 0,
+            "SearchCreativeWork": 1,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "RateBook": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 97,
+            "SearchCreativeWork": 3,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "SearchCreativeWork": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 2,
+            "RateBook": 0,
+            "SearchCreativeWork": 98,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "SearchScreeningEvent": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 4,
+            "RateBook": 0,
+            "SearchCreativeWork": 8,
+            "SearchScreeningEvent": 88,
+            "INVALID": 0
+          }
+        }
+      },
+      "accuracy_wilson95_descriptive": [
+        0.9562816712757364,
+        0.9814295017856637
+      ],
+      "latency_p50_seconds": 0.5440136454999447,
+      "latency_p95_seconds": 0.6261650419910438,
+      "latency_mean_seconds": 0.5692112419514784,
+      "latency_min_seconds": 0.47984741599066183,
+      "latency_max_seconds": 3.8807061660045292,
+      "total_request_seconds": 398.44786936603487,
+      "requests_per_second_http": 1.7568170238022875,
+      "wall_seconds": 401.7393082920171,
+      "model_versions": [
+        "jev-1.13.0"
+      ],
+      "classes": {},
+      "requests_per_second_wall": 1.7424234710216173,
+      "http_429_retries": 0,
+      "http_attempts": 700,
+      "retry_http_seconds": 0,
+      "error_billing_unknown": false,
+      "unique_text_accuracy": 0.9713055954088953,
+      "unique_text_n": 697,
+      "duplicate_text_conflicting_gold": 0,
+      "input_tokens": 356005,
+      "output_tokens": 68595,
+      "estimated_api_cost_usd": 0.01495221,
+      "estimated_api_cost_per_1000": 0.0213603,
+      "estimated_api_cost_per_correct": 2.198854411764706e-05,
+      "multiclass_brier": 0.041613305289547715,
+      "log_loss_epsilon_1e15": 0.07606929736839574,
+      "probability_mass": {
+        "min": 0.9900000000000001,
+        "max": 1.0,
+        "nonunit_count": 1,
+        "nonunit_absolute_tolerance": 1e-06
+      },
+      "calibration_bins_exploratory": [
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 1,
+          "mean_top_probability": 0.48,
+          "accuracy": 0
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 4,
+          "mean_top_probability": 0.56,
+          "accuracy": 0.5
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "n": 6,
+          "mean_top_probability": 0.6383333333333333,
+          "accuracy": 0.3333333333333333
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "n": 11,
+          "mean_top_probability": 0.7527272727272727,
+          "accuracy": 0.7272727272727273
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 26,
+          "mean_top_probability": 0.8623076923076923,
+          "accuracy": 0.6923076923076923
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "n": 652,
+          "mean_top_probability": 0.9942168618702361,
+          "accuracy": 0.9969325153374233
+        }
+      ],
+      "ece_10_bins_exploratory": 0.012886580086580146,
+      "errors": [
+        {
+          "id": "SearchScreeningEvent-070",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "GetWeather-098",
+          "expected": "GetWeather",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-084",
+          "expected": "RateBook",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-049",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-006",
+          "expected": "RateBook",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-001",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "BookRestaurant-045",
+          "expected": "BookRestaurant",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-006",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "PlayMusic-044",
+          "expected": "PlayMusic",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-055",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-073",
+          "expected": "RateBook",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-004",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-060",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-044",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-036",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-034",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-086",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-000",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-009",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-067",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        }
+      ]
+    },
+    "gemini": {
+      "complete": true,
+      "attempted": 700,
+      "valid": 700,
+      "invalid_outputs": 0,
+      "transport_or_contract_errors": 0,
+      "valid_output_rate": 1.0,
+      "metrics": {
+        "n": 700,
+        "correct": 693,
+        "accuracy": 0.99,
+        "macro_f1": 0.9900927536978243,
+        "per_class": {
+          "AddToPlaylist": {
+            "n": 100,
+            "correct": 100,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BookRestaurant": {
+            "n": 100,
+            "correct": 100,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "GetWeather": {
+            "n": 100,
+            "correct": 99,
+            "precision": 1.0,
+            "recall": 0.99,
+            "f1": 0.9949748743718593
+          },
+          "PlayMusic": {
+            "n": 100,
+            "correct": 98,
+            "precision": 1.0,
+            "recall": 0.98,
+            "f1": 0.98989898989899
+          },
+          "RateBook": {
+            "n": 100,
+            "correct": 100,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "SearchCreativeWork": {
+            "n": 100,
+            "correct": 100,
+            "precision": 0.9345794392523364,
+            "recall": 1.0,
+            "f1": 0.966183574879227
+          },
+          "SearchScreeningEvent": {
+            "n": 100,
+            "correct": 96,
+            "precision": 1.0,
+            "recall": 0.96,
+            "f1": 0.9795918367346939
+          }
+        },
+        "confusion": {
+          "AddToPlaylist": {
+            "AddToPlaylist": 100,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "BookRestaurant": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 100,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "GetWeather": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 99,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 1,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "PlayMusic": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 98,
+            "RateBook": 0,
+            "SearchCreativeWork": 2,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "RateBook": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 100,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "SearchCreativeWork": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 100,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "SearchScreeningEvent": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 4,
+            "SearchScreeningEvent": 96,
+            "INVALID": 0
+          }
+        }
+      },
+      "accuracy_wilson95_descriptive": [
+        0.9795035835273037,
+        0.995147726654697
+      ],
+      "latency_p50_seconds": 0.6397899375006091,
+      "latency_p95_seconds": 0.8311616250139195,
+      "latency_mean_seconds": 0.6580983374389637,
+      "latency_min_seconds": 0.4749924589996226,
+      "latency_max_seconds": 3.7269920830149204,
+      "total_request_seconds": 460.6688362072746,
+      "requests_per_second_http": 1.5195297467116706,
+      "wall_seconds": 463.54565091698896,
+      "model_versions": [
+        "gemini-3.5-flash-lite"
+      ],
+      "classes": {},
+      "requests_per_second_wall": 1.510099379889026,
+      "http_429_retries": 0,
+      "http_attempts": 700,
+      "retry_http_seconds": 0,
+      "error_billing_unknown": false,
+      "unique_text_accuracy": 0.9899569583931134,
+      "unique_text_n": 697,
+      "duplicate_text_conflicting_gold": 0,
+      "secondary_fence_normalized": {
+        "n": 700,
+        "correct": 693,
+        "accuracy": 0.99,
+        "macro_f1": 0.9900927536978243,
+        "per_class": {
+          "AddToPlaylist": {
+            "n": 100,
+            "correct": 100,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BookRestaurant": {
+            "n": 100,
+            "correct": 100,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "GetWeather": {
+            "n": 100,
+            "correct": 99,
+            "precision": 1.0,
+            "recall": 0.99,
+            "f1": 0.9949748743718593
+          },
+          "PlayMusic": {
+            "n": 100,
+            "correct": 98,
+            "precision": 1.0,
+            "recall": 0.98,
+            "f1": 0.98989898989899
+          },
+          "RateBook": {
+            "n": 100,
+            "correct": 100,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "SearchCreativeWork": {
+            "n": 100,
+            "correct": 100,
+            "precision": 0.9345794392523364,
+            "recall": 1.0,
+            "f1": 0.966183574879227
+          },
+          "SearchScreeningEvent": {
+            "n": 100,
+            "correct": 96,
+            "precision": 1.0,
+            "recall": 0.96,
+            "f1": 0.9795918367346939
+          }
+        },
+        "confusion": {
+          "AddToPlaylist": {
+            "AddToPlaylist": 100,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "BookRestaurant": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 100,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "GetWeather": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 99,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 1,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "PlayMusic": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 98,
+            "RateBook": 0,
+            "SearchCreativeWork": 2,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "RateBook": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 100,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "SearchCreativeWork": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 100,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "SearchScreeningEvent": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 4,
+            "SearchScreeningEvent": 96,
+            "INVALID": 0
+          }
+        }
+      },
+      "format_recovery": {
+        "recovered_outputs": 0,
+        "unrecoverable_outputs": 0,
+        "valid_answers_changed": 0,
+        "procedure_sha256": "dd77766678dee8ef4fb13078c4bd294c60f9d2485c20d6bc4cd08a654592f952"
+      },
+      "thinking_usage_present_count": 0,
+      "cached_input_tokens": 0,
+      "thinking_tokens_reported": 0,
+      "undiscounted_standard_cost_usd": 0.0548682,
+      "input_tokens": 117694,
+      "output_tokens": 7824,
+      "estimated_api_cost_usd": 0.0548682,
+      "estimated_api_cost_per_1000": 0.07838314285714286,
+      "estimated_api_cost_per_correct": 7.917489177489178e-05,
+      "errors": [
+        {
+          "id": "SearchScreeningEvent-019",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "GetWeather-098",
+          "expected": "GetWeather",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "PlayMusic-047",
+          "expected": "PlayMusic",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "PlayMusic-044",
+          "expected": "PlayMusic",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-055",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-060",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-036",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        }
+      ]
+    },
+    "gemma": {
+      "complete": true,
+      "attempted": 700,
+      "valid": 570,
+      "invalid_outputs": 130,
+      "transport_or_contract_errors": 0,
+      "valid_output_rate": 0.8142857142857143,
+      "metrics": {
+        "n": 700,
+        "correct": 564,
+        "accuracy": 0.8057142857142857,
+        "macro_f1": 0.887664684142826,
+        "per_class": {
+          "AddToPlaylist": {
+            "n": 100,
+            "correct": 85,
+            "precision": 1.0,
+            "recall": 0.85,
+            "f1": 0.918918918918919
+          },
+          "BookRestaurant": {
+            "n": 100,
+            "correct": 82,
+            "precision": 1.0,
+            "recall": 0.82,
+            "f1": 0.9010989010989011
+          },
+          "GetWeather": {
+            "n": 100,
+            "correct": 82,
+            "precision": 1.0,
+            "recall": 0.82,
+            "f1": 0.9010989010989011
+          },
+          "PlayMusic": {
+            "n": 100,
+            "correct": 86,
+            "precision": 0.9885057471264368,
+            "recall": 0.86,
+            "f1": 0.9197860962566845
+          },
+          "RateBook": {
+            "n": 100,
+            "correct": 80,
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888
+          },
+          "SearchCreativeWork": {
+            "n": 100,
+            "correct": 73,
+            "precision": 0.9358974358974359,
+            "recall": 0.73,
+            "f1": 0.8202247191011236
+          },
+          "SearchScreeningEvent": {
+            "n": 100,
+            "correct": 76,
+            "precision": 1.0,
+            "recall": 0.76,
+            "f1": 0.8636363636363636
+          }
+        },
+        "confusion": {
+          "AddToPlaylist": {
+            "AddToPlaylist": 85,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 15
+          },
+          "BookRestaurant": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 82,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 18
+          },
+          "GetWeather": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 82,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 18
+          },
+          "PlayMusic": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 86,
+            "RateBook": 0,
+            "SearchCreativeWork": 1,
+            "SearchScreeningEvent": 0,
+            "INVALID": 13
+          },
+          "RateBook": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 80,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 20
+          },
+          "SearchCreativeWork": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 1,
+            "RateBook": 0,
+            "SearchCreativeWork": 73,
+            "SearchScreeningEvent": 0,
+            "INVALID": 26
+          },
+          "SearchScreeningEvent": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 4,
+            "SearchScreeningEvent": 76,
+            "INVALID": 20
+          }
+        }
+      },
+      "accuracy_wilson95_descriptive": [
+        0.7747686423751032,
+        0.8333228456101682
+      ],
+      "latency_p50_seconds": 1.1060290210007224,
+      "latency_p95_seconds": 1.3272270419984125,
+      "latency_mean_seconds": 1.1264401203081278,
+      "latency_min_seconds": 0.9161390000081155,
+      "latency_max_seconds": 3.036661833000835,
+      "total_request_seconds": 788.5080842156895,
+      "requests_per_second_http": 0.8877524707895337,
+      "wall_seconds": 1754.2978021250165,
+      "model_versions": [
+        "gemma-4-31b-it"
+      ],
+      "classes": {},
+      "requests_per_second_wall": 0.39902005187036993,
+      "http_429_retries": 0,
+      "http_attempts": 700,
+      "retry_http_seconds": 0,
+      "error_billing_unknown": false,
+      "unique_text_accuracy": 0.8055954088952654,
+      "unique_text_n": 697,
+      "duplicate_text_conflicting_gold": 0,
+      "secondary_fence_normalized": {
+        "n": 700,
+        "correct": 692,
+        "accuracy": 0.9885714285714285,
+        "macro_f1": 0.9886088763047273,
+        "per_class": {
+          "AddToPlaylist": {
+            "n": 100,
+            "correct": 100,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BookRestaurant": {
+            "n": 100,
+            "correct": 100,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "GetWeather": {
+            "n": 100,
+            "correct": 99,
+            "precision": 1.0,
+            "recall": 0.99,
+            "f1": 0.9949748743718593
+          },
+          "PlayMusic": {
+            "n": 100,
+            "correct": 99,
+            "precision": 0.9801980198019802,
+            "recall": 0.99,
+            "f1": 0.9850746268656716
+          },
+          "RateBook": {
+            "n": 100,
+            "correct": 100,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "SearchCreativeWork": {
+            "n": 100,
+            "correct": 99,
+            "precision": 0.9428571428571428,
+            "recall": 0.99,
+            "f1": 0.9658536585365853
+          },
+          "SearchScreeningEvent": {
+            "n": 100,
+            "correct": 95,
+            "precision": 1.0,
+            "recall": 0.95,
+            "f1": 0.9743589743589743
+          }
+        },
+        "confusion": {
+          "AddToPlaylist": {
+            "AddToPlaylist": 100,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "BookRestaurant": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 100,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "GetWeather": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 99,
+            "PlayMusic": 0,
+            "RateBook": 0,
+            "SearchCreativeWork": 1,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "PlayMusic": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 99,
+            "RateBook": 0,
+            "SearchCreativeWork": 1,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "RateBook": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 100,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "SearchCreativeWork": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 1,
+            "RateBook": 0,
+            "SearchCreativeWork": 99,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "SearchScreeningEvent": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 1,
+            "RateBook": 0,
+            "SearchCreativeWork": 4,
+            "SearchScreeningEvent": 95,
+            "INVALID": 0
+          }
+        }
+      },
+      "format_recovery": {
+        "recovered_outputs": 130,
+        "unrecoverable_outputs": 0,
+        "valid_answers_changed": 0,
+        "procedure_sha256": "dd77766678dee8ef4fb13078c4bd294c60f9d2485c20d6bc4cd08a654592f952"
+      },
+      "thinking_usage_present_count": 0,
+      "cached_input_tokens": 0,
+      "thinking_tokens_reported": 0,
+      "undiscounted_standard_cost_usd": 0,
+      "input_tokens": 117694,
+      "output_tokens": 6165,
+      "estimated_api_cost_usd": 0,
+      "estimated_api_cost_per_1000": 0.0,
+      "estimated_api_cost_per_correct": 0.0,
+      "errors": [
+        {
+          "id": "RateBook-042",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-070",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-023",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-085",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-078",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-068",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-015",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-027",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-089",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-088",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-026",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-000",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-003",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-083",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-098",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-086",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-065",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-088",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-025",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-046",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-043",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-033",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-084",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-033",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-098",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-027",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-030",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-093",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-039",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-058",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-097",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-066",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-049",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-049",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-077",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-032",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-093",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-002",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-024",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-075",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-061",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-058",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-012",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-013",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-050",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-016",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-007",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-086",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-045",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-019",
+          "expected": "PlayMusic",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "BookRestaurant-010",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-059",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-078",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-065",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-096",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-030",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-065",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-048",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-025",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-068",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-047",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-093",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-038",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-040",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-023",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-012",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-046",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-069",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-025",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-009",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-081",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-029",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-026",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-082",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-045",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-074",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-002",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-007",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-044",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-047",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-089",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-092",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-013",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-035",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-088",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-041",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-001",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-004",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-060",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-091",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-080",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-075",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-054",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-005",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-004",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-004",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-008",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-031",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-058",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-018",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-014",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-087",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-047",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-009",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-079",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-062",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "PlayMusic-003",
+          "expected": "PlayMusic",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-017",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-043",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-051",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-040",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-052",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-016",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-077",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-036",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-045",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "AddToPlaylist-020",
+          "expected": "AddToPlaylist",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-007",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-034",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-094",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-029",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-062",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-099",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-054",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-089",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-000",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchCreativeWork-083",
+          "expected": "SearchCreativeWork",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-091",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-044",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-009",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-075",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-092",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "SearchScreeningEvent-067",
+          "expected": "SearchScreeningEvent",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "GetWeather-003",
+          "expected": "GetWeather",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "RateBook-015",
+          "expected": "RateBook",
+          "predicted": null,
+          "invalid_output": true
+        },
+        {
+          "id": "BookRestaurant-095",
+          "expected": "BookRestaurant",
+          "predicted": null,
+          "invalid_output": true
+        }
+      ]
+    },
+    "deberta": {
+      "complete": true,
+      "attempted": 700,
+      "valid": 700,
+      "invalid_outputs": 0,
+      "transport_or_contract_errors": 0,
+      "valid_output_rate": 1.0,
+      "metrics": {
+        "n": 700,
+        "correct": 622,
+        "accuracy": 0.8885714285714286,
+        "macro_f1": 0.8909551701942304,
+        "per_class": {
+          "AddToPlaylist": {
+            "n": 100,
+            "correct": 87,
+            "precision": 1.0,
+            "recall": 0.87,
+            "f1": 0.93048128342246
+          },
+          "BookRestaurant": {
+            "n": 100,
+            "correct": 98,
+            "precision": 0.9514563106796117,
+            "recall": 0.98,
+            "f1": 0.9655172413793104
+          },
+          "GetWeather": {
+            "n": 100,
+            "correct": 99,
+            "precision": 0.9801980198019802,
+            "recall": 0.99,
+            "f1": 0.9850746268656716
+          },
+          "PlayMusic": {
+            "n": 100,
+            "correct": 99,
+            "precision": 0.6387096774193548,
+            "recall": 0.99,
+            "f1": 0.7764705882352941
+          },
+          "RateBook": {
+            "n": 100,
+            "correct": 90,
+            "precision": 0.9090909090909091,
+            "recall": 0.9,
+            "f1": 0.9045226130653267
+          },
+          "SearchCreativeWork": {
+            "n": 100,
+            "correct": 67,
+            "precision": 0.9710144927536232,
+            "recall": 0.67,
+            "f1": 0.7928994082840237
+          },
+          "SearchScreeningEvent": {
+            "n": 100,
+            "correct": 82,
+            "precision": 0.9534883720930233,
+            "recall": 0.82,
+            "f1": 0.8817204301075269
+          }
+        },
+        "confusion": {
+          "AddToPlaylist": {
+            "AddToPlaylist": 87,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 12,
+            "RateBook": 0,
+            "SearchCreativeWork": 1,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "BookRestaurant": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 98,
+            "GetWeather": 0,
+            "PlayMusic": 0,
+            "RateBook": 2,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "GetWeather": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 99,
+            "PlayMusic": 0,
+            "RateBook": 1,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "PlayMusic": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 1,
+            "GetWeather": 0,
+            "PlayMusic": 99,
+            "RateBook": 0,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "RateBook": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 0,
+            "GetWeather": 0,
+            "PlayMusic": 10,
+            "RateBook": 90,
+            "SearchCreativeWork": 0,
+            "SearchScreeningEvent": 0,
+            "INVALID": 0
+          },
+          "SearchCreativeWork": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 1,
+            "GetWeather": 2,
+            "PlayMusic": 23,
+            "RateBook": 3,
+            "SearchCreativeWork": 67,
+            "SearchScreeningEvent": 4,
+            "INVALID": 0
+          },
+          "SearchScreeningEvent": {
+            "AddToPlaylist": 0,
+            "BookRestaurant": 3,
+            "GetWeather": 0,
+            "PlayMusic": 11,
+            "RateBook": 3,
+            "SearchCreativeWork": 1,
+            "SearchScreeningEvent": 82,
+            "INVALID": 0
+          }
+        }
+      },
+      "accuracy_wilson95_descriptive": [
+        0.8631077584943951,
+        0.9097935720289407
+      ],
+      "latency_p50_seconds": 2.3747976475860924,
+      "latency_p95_seconds": 2.709799492964521,
+      "latency_mean_seconds": 2.3298488914783646,
+      "latency_min_seconds": 1.8025902090594172,
+      "latency_max_seconds": 2.935682195937261,
+      "total_request_seconds": 1630.8942240348551,
+      "requests_per_second_http": 0.4292123852570832,
+      "wall_seconds": 1634.1952866249776,
+      "model_versions": [
+        "MoritzLaurer/deberta-v3-large-zeroshot-v2.0"
+      ],
+      "classes": {},
+      "requests_per_second_wall": 0.42834537936140743,
+      "http_429_retries": 0,
+      "http_attempts": 700,
+      "retry_http_seconds": 0,
+      "error_billing_unknown": false,
+      "unique_text_accuracy": 0.8880918220946915,
+      "unique_text_n": 697,
+      "duplicate_text_conflicting_gold": 0,
+      "input_tokens": null,
+      "output_tokens": null,
+      "estimated_api_cost_usd": 0,
+      "estimated_api_cost_per_1000": 0.0,
+      "estimated_api_cost_per_correct": 0.0,
+      "multiclass_brier": 0.1956192818138156,
+      "log_loss_epsilon_1e15": 0.43880333182238795,
+      "probability_mass": {
+        "min": 0.9999997921986505,
+        "max": 1.0000001688604243,
+        "nonunit_count": 0,
+        "nonunit_absolute_tolerance": 1e-06
+      },
+      "calibration_bins_exploratory": [
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 9,
+          "mean_top_probability": 0.25389824267768374,
+          "accuracy": 0.2222222222222222
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 25,
+          "mean_top_probability": 0.35824754723748464,
+          "accuracy": 0.44
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 27,
+          "mean_top_probability": 0.45528665276798774,
+          "accuracy": 0.6666666666666666
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 46,
+          "mean_top_probability": 0.5481715233618576,
+          "accuracy": 0.7391304347826086
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "n": 53,
+          "mean_top_probability": 0.6510110829611827,
+          "accuracy": 0.9056603773584906
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "n": 59,
+          "mean_top_probability": 0.7548538205462175,
+          "accuracy": 0.9491525423728814
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 61,
+          "mean_top_probability": 0.8518734254177047,
+          "accuracy": 0.8688524590163934
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "n": 420,
+          "mean_top_probability": 0.9725021117734406,
+          "accuracy": 0.9523809523809523
+        }
+      ],
+      "ece_10_bins_exploratory": 0.07323844426996641,
+      "errors": [
+        {
+          "id": "SearchCreativeWork-092",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-042",
+          "expected": "RateBook",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-070",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-058",
+          "expected": "SearchCreativeWork",
+          "predicted": "SearchScreeningEvent",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-087",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-030",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-024",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-000",
+          "expected": "RateBook",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-064",
+          "expected": "SearchScreeningEvent",
+          "predicted": "RateBook",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-002",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-007",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-057",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-071",
+          "expected": "SearchCreativeWork",
+          "predicted": "BookRestaurant",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-046",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-039",
+          "expected": "SearchScreeningEvent",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-046",
+          "expected": "RateBook",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-053",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-094",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "GetWeather-098",
+          "expected": "GetWeather",
+          "predicted": "RateBook",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-098",
+          "expected": "SearchCreativeWork",
+          "predicted": "SearchScreeningEvent",
+          "invalid_output": false
+        },
+        {
+          "id": "BookRestaurant-006",
+          "expected": "BookRestaurant",
+          "predicted": "RateBook",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-093",
+          "expected": "SearchScreeningEvent",
+          "predicted": "BookRestaurant",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-063",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-026",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-049",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-093",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-024",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-022",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-031",
+          "expected": "SearchScreeningEvent",
+          "predicted": "RateBook",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-059",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-001",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-056",
+          "expected": "RateBook",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-086",
+          "expected": "RateBook",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-017",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-056",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-060",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-096",
+          "expected": "SearchCreativeWork",
+          "predicted": "SearchScreeningEvent",
+          "invalid_output": false
+        },
+        {
+          "id": "BookRestaurant-075",
+          "expected": "BookRestaurant",
+          "predicted": "RateBook",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-083",
+          "expected": "AddToPlaylist",
+          "predicted": "SearchCreativeWork",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-086",
+          "expected": "SearchCreativeWork",
+          "predicted": "GetWeather",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-048",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-020",
+          "expected": "SearchCreativeWork",
+          "predicted": "RateBook",
+          "invalid_output": false
+        },
+        {
+          "id": "PlayMusic-047",
+          "expected": "PlayMusic",
+          "predicted": "BookRestaurant",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-088",
+          "expected": "SearchCreativeWork",
+          "predicted": "RateBook",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-040",
+          "expected": "RateBook",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-016",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-013",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-074",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-036",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-075",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-006",
+          "expected": "SearchScreeningEvent",
+          "predicted": "BookRestaurant",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-002",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-090",
+          "expected": "SearchCreativeWork",
+          "predicted": "RateBook",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-040",
+          "expected": "SearchCreativeWork",
+          "predicted": "SearchScreeningEvent",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-088",
+          "expected": "RateBook",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-073",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-074",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-044",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-031",
+          "expected": "RateBook",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-037",
+          "expected": "SearchCreativeWork",
+          "predicted": "GetWeather",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-014",
+          "expected": "RateBook",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-079",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-054",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-019",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-064",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-036",
+          "expected": "SearchScreeningEvent",
+          "predicted": "RateBook",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-007",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-034",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-072",
+          "expected": "SearchScreeningEvent",
+          "predicted": "BookRestaurant",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-039",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-062",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-086",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "AddToPlaylist-041",
+          "expected": "AddToPlaylist",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-000",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-049",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchScreeningEvent-067",
+          "expected": "SearchScreeningEvent",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "SearchCreativeWork-078",
+          "expected": "SearchCreativeWork",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        },
+        {
+          "id": "RateBook-015",
+          "expected": "RateBook",
+          "predicted": "PlayMusic",
+          "invalid_output": false
+        }
+      ]
+    }
+  },
+  "pairwise": {
+    "jev_minus_gemini": {
+      "accuracy_difference": -0.018571428571428572,
+      "a_only_correct": 2,
+      "b_only_correct": 15,
+      "paired_text_cluster_bootstrap95": [
+        -0.03138373751783167,
+        -0.0071633237822349575
+      ],
+      "mcnemar_exact_two_sided_unadjusted": 0.002349853515625
+    },
+    "jev_minus_gemma": {
+      "accuracy_difference": 0.1657142857142857,
+      "a_only_correct": 124,
+      "b_only_correct": 8,
+      "paired_text_cluster_bootstrap95": [
+        0.13714285714285715,
+        0.1957142857142857
+      ],
+      "mcnemar_exact_two_sided_unadjusted": 7.222443479508938e-28
+    },
+    "jev_minus_deberta": {
+      "accuracy_difference": 0.08285714285714285,
+      "a_only_correct": 67,
+      "b_only_correct": 9,
+      "paired_text_cluster_bootstrap95": [
+        0.05991440798858773,
+        0.10714285714285714
+      ],
+      "mcnemar_exact_two_sided_unadjusted": 4.334352264140022e-12
+    },
+    "jev_minus_gemma_postformatted": {
+      "accuracy_difference": -0.017142857142857144,
+      "a_only_correct": 1,
+      "b_only_correct": 13,
+      "paired_text_cluster_bootstrap95": [
+        -0.028409090909090908,
+        -0.00715307582260372
+      ],
+      "mcnemar_exact_two_sided_unadjusted": 0.0018310546875
+    },
+    "gemini_minus_gemma": {
+      "accuracy_difference": 0.18428571428571427,
+      "a_only_correct": 131,
+      "b_only_correct": 2,
+      "paired_text_cluster_bootstrap95": [
+        0.15616045845272206,
+        0.2145922746781116
+      ],
+      "mcnemar_exact_two_sided_unadjusted": 1.6368758835200354e-36
+    },
+    "gemini_minus_deberta": {
+      "accuracy_difference": 0.10142857142857142,
+      "a_only_correct": 75,
+      "b_only_correct": 4,
+      "paired_text_cluster_bootstrap95": [
+        0.07834757834757834,
+        0.12571428571428572
+      ],
+      "mcnemar_exact_two_sided_unadjusted": 5.2434681244715905e-18
+    },
+    "gemini_minus_gemma_postformatted": {
+      "accuracy_difference": 0.0014285714285714286,
+      "a_only_correct": 5,
+      "b_only_correct": 4,
+      "paired_text_cluster_bootstrap95": [
+        -0.007142857142857143,
+        0.009985734664764621
+      ],
+      "mcnemar_exact_two_sided_unadjusted": 1
+    },
+    "gemma_minus_deberta": {
+      "accuracy_difference": -0.08285714285714285,
+      "a_only_correct": 52,
+      "b_only_correct": 110,
+      "paired_text_cluster_bootstrap95": [
+        -0.11874105865522175,
+        -0.04878048780487805
+      ],
+      "mcnemar_exact_two_sided_unadjusted": 6.058495675070991e-06
+    },
+    "deberta_minus_gemma_postformatted": {
+      "accuracy_difference": -0.1,
+      "a_only_correct": 3,
+      "b_only_correct": 73,
+      "paired_text_cluster_bootstrap95": [
+        -0.12410841654778887,
+        -0.07692307692307693
+      ],
+      "mcnemar_exact_two_sided_unadjusted": 1.938302550893458e-18
+    }
+  },
+  "billing_verified": false,
+  "analysis_source_sha256": "faf93e80de1842395eea4cafa296b2e5cae02c0dc022db25d1441ca6c565d652",
+  "analysis_utc": "2026-09-21T06:16:44.300102+00:00"
+}

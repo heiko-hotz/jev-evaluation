@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-09-21T05:46:39.192623+00:00",
+  "models": {
+    "jev": "jev-1.13.0",
+    "gemini": "gemini-3.5-flash-lite",
+    "gemma": "gemma-4-31b-it",
+    "deberta": "MoritzLaurer/deberta-v3-large-zeroshot-v2.0"
+  },
+  "criteria": {
+    "AddToPlaylist": "Add a song, album, or artist to a music playlist.",
+    "BookRestaurant": "Reserve a table at a restaurant.",
+    "GetWeather": "Ask about weather conditions or forecasts.",
+    "PlayMusic": "Play or listen to music, a song, an album, or an artist.",
+    "RateBook": "Give a rating or review to a book.",
+    "SearchCreativeWork": "Find a creative work such as a book, film, television show, song, or game; not a screening time or a request to play music.",
+    "SearchScreeningEvent": "Find movie screenings, cinema showtimes, or movie tickets."
+  },
+  "requests_per_model": 700,
+  "spending_ceiling_usd": null,
+  "concurrency_per_model": 1,
+  "max_429_retries_per_model": 10,
+  "gemma_min_interval_seconds": 2.5,
+  "file_sha256": {
+    "scripts/snips_eval.py": "7454731d74d13e0353e3fa1658f062faf94ca3f7551bfefde7ebbc2f132c3b08",
+    "scripts/snips_deberta_remote.py": "23377daa5922092be2afec37aa7c802f7f9a080134ba1dfb9404d40eb6808d60",
+    "scripts/clinc_eval.py": "d660107a06316d21ffc72af17a771a24299a67e765ecb57646b58c3630c3e714",
+    "scripts/clinc_cloud_v2.py": "e854402763e21a873ec7bba4ee671d8b9207b641163296b3cfc65480981f5cf0",
+    "scripts/smoke.py": "e967cad945b319f8adbedb466efbbf985ef7373f7392ae4318b566b940e15507",
+    "scripts/gemini_challenge.py": "170aee408fb938d9ee58b6ebdd6483977fbc9469462baecf9f47b13d76e9e72c",
+    "scripts/deberta.py": "c1cb770a3c59eecc246c9a541882733165e4a73a883a15f9bbae0316ca083c69",
+    "scripts/deberta_remote.py": "7ba568f4f7de5d1267ef7d451d6d2bf96cbe34be19632c37c30e53e2bea9d6b6",
+    "scripts/deberta_challenge.py": "f30befd1f3c338cc2a4e85fbd7f94acc7e0d48f69877369eb6b03c5276faa3f0",
+    "docs/snips-v1-protocol.md": "f963e8f43fa3aab15d229f1992226d4dc785bbde7aaac4699e0e348e845485cb",
+    "data/snips-v1.json": "57eafbbac5828971d1474d49042494162dc8b46e06de6abb54a3f3b942c94adc",
+    "data/snips-provenance-v1.json": "e5481637933c1cb3f805d64bf5e05bdf4c46681c381c2533de99cfbca31bc9d4"
+  },
+  "request_sha256": {
+    "jev": "a7c65826a06c4f955c9ea830f059c1f102114ecb195b84e484ca43dc4d6ab0d2",
+    "gemini": "950d135e34baaee33fff38a6778e7adb7c7b2ff7d28a3d545f040bf785e77a02",
+    "gemma": "8ed167eb2e3b020c38e6df82da5f09069c4e7055c2e05ac60af156515cb37061",
+    "deberta": "c5c64ee4d043affebd02543e3551e7f262e2550e30b8fc7d85b2e2a399bd905d"
+  },
+  "python": "3.14.7",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+}

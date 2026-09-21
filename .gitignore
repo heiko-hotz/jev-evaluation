@@ -8,3 +8,6 @@ output/
 *.log
 .venv/
 __pycache__/
+
+# Reproducible baseline downloads stay local.
+baseline/deberta/model/
