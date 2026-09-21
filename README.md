@@ -7,7 +7,7 @@ no demonstrations, fine-tuning, retrieval, or prompt optimization.
 | Model | Strict accuracy | After formatting recovery |
 |---|---:|---:|
 | Jev 1.13.0 | 97.14% | — |
-| Gemini 3.5 Flash-Lite | 99.00% | 99.00% |
+| Gemini 3.5 Flash-Lite | 99.00% | — |
 | Gemma 4 31B | 80.57% | 98.86% |
 | DeBERTa-v3-large zero-shot, CPU | 88.86% | — |
 

@@ -24,7 +24,7 @@ lines+=['','Strict scoring requires a valid schema-conforming answer with the co
 '### Post-formatting score (owner requested)','',
 '| Model | Correct after removing only Markdown fences | Accuracy | Macro F1 | Recovered outputs |',
 '|---|---:|---:|---:|---:|']
-for m in ['gemini','gemma']:
+for m in ['gemma']:
  if m in models:
   q=models[m]['secondary_fence_normalized'];lines.append(f"| {names[m]} | {q['correct']}/{q['n']} | {percent(q['accuracy'])} | {q['macro_f1']:.4f} | {models[m]['format_recovery']['recovered_outputs']} |")
 lines+=['','This second score removes only enclosing/trailing Markdown fences, then repeats',
